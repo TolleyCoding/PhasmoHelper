@@ -2,7 +2,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phasmo Helper</title>
-    <script src="app.js"></script>
 </head>
 <h1>Phasmophobia Helper</h1>
 <form _lpchecked="1" action="javascript:void(0);">
@@ -23,18 +22,17 @@
     <label for="writing">Ghost Writing</label><br>
 
     <input type="checkbox" id="spiritbox" name="spiritbox">
-    <label for="spiritbox">Spirit Box</label><br>
+    <label for="spiritbox">Spirit Box</label><br><br>
 
-    <button onClick=submit() type="submit">Add</button>
+    <button onClick=submit() id="check">Check</button>
 </form>
 <br><br>
 <table>
     <thead>
         <tr>
-            <th>Stage</th>
-            <th>Display</th>
-            <th>Button Position</th>
-            <th>Button Label</th>
+            <th>Ghost</th>
+            <th>Evidence</th>
+            <th>Notes</th>
         </tr>
     </thead>
     <tbody id="table-inside">
@@ -46,3 +44,5 @@
 
 <strong>GitHub for this helper</strong> - <a
     href="https://github.com/TolleyCoding/PhasmoHelper">https://github.com/TolleyCoding/PhasmoHelper</a>
+
+<script src="app.js"></script>
