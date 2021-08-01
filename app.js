@@ -38,6 +38,10 @@ function formatEvidence(arr) {
     return out;
 }
 
+function deleteRow(element) {
+    element.remove();
+}
+
 function submit() {
     let selectedEvidence = [];
 
@@ -60,7 +64,7 @@ function submit() {
         })
         if (invalid) return;
         document.getElementById("table-inside").innerHTML = document.getElementById("table-inside").innerHTML +
-            `<tr><td>${ghost.name}</td><td>${formatEvidence(ghost.evidence)}</td><td>${ghost.notes}</td></tr>`;
+            `<tr id="${ghost.name}"><td><i class="fas fa-trash-alt" onClick="deleteRow(${ghost.name})"></i></td><td>${ghost.name}</td><td>${formatEvidence(ghost.evidence)}</td><td>${ghost.notes}</td></tr>`;
     })
 }
 
