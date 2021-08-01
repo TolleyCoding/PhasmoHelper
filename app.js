@@ -17,7 +17,61 @@ const ghosts = [{
     name: "Mare",
     evidence: ["freezing", "orbs", "spiritbox"],
     notes: "?"
-},]
+},
+{
+    name: "Oni",
+    evidence: ["emf5", "writing", "spiritbox"],
+    notes: "?"
+},
+{
+    name: "Phantom",
+    evidence: ["emf5", "freezing", "orbs"],
+    notes: "?"
+},
+{
+    name: "Poltergeist",
+    evidence: ["fingerprints", "orbs", "spiritbox"],
+    notes: "?"
+},
+{
+    name: "Revenant",
+    evidence: ["emf5", "fingerprints", "writing"],
+    notes: "?"
+},
+{
+    name: "Shade",
+    evidence: ["emf5", "orbs", "writing"],
+    notes: "?"
+},
+{
+    name: "Spirit",
+    evidence: ["fingerprints", "writing", "spiritbox"],
+    notes: "?"
+},
+{
+    name: "Wraith",
+    evidence: ["fingerprints", "freezing", "spiritbox"],
+    notes: "?"
+},
+{
+    name: "Yurei",
+    evidence: ["freezing", "orbs", "writing"],
+    notes: "?"
+},
+{
+    name: "Yokai",
+    evidence: ["orbs", "writing", "spiritbox"],
+    notes: "?"
+},
+{
+    name: "Hantu",
+    evidence: ["fingerprints", "orbs", "writing"],
+    notes: "?"
+}]
+
+function clearList() {
+    document.getElementById("table-inside").innerHTML = "";
+}
 
 function formatEvidence(arr) {
     let out = ""
